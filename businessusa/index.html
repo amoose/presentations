@@ -43,14 +43,167 @@
 				<div class="slides">
 					
 					<section>
-					    
-					    <p align="center"><img src="http://www.health-politics.com/open%20for%20business.jpg" /></p>
-						<h3>BusinessUSA</h3>
-						<p align='center'>2013 October 25</p>        	
-			
-					</section>	
+					   <!-- <h3></h3> -->
+					   <p align="center">
+                        <img src="images/busalogo.png" /><br /><br />
+                        <img src="images/pif-logo.png" style="" width="50%" height="50%" />
+                        
+                       </p>
+
+					   <p align='center'>2013 October 25</p>
+                    </section>
+
+<!-- 
+General overview of PIFs MyUSA changes including
+Authentication and other Security measures/concerns we’d need to take into account.
+Mockup design for MyUSA/BusinessUSA screens
+What kinds of profile updates would the authenticated user be able to make ?
+Email notifications for authenticated users (if any) e.g. profile updates, profile expiration, password expiration, etc
+etc
+Integration points with BusinessUSA/scope of BusinessUSA enhancements
+Customization
+What user-specific profile information would be available ? e.g. location information (zip), preferred business industries, etc
+This would allow us to determine which piece(s) of content to make available to the logged in user AND what an authenticated user should be able to do within BusinessUSA.
+On screen notifications (if any) e.g. upcoming event(s) per users preferred industry within a certain number of miles of users zip, newly published programs/opportunities in users preferred industry, etc
+Storing (recent) global search and wizard search preferences
+etc
+Any other related matters
+ -->
+					
 					                                                                                                                       
-                                                                                         
+                    
+                    <section>
+                        <p align="center">
+                            <!-- <img src="images/address-bar.png" /> -->
+                            <h2>Overview: Features</h2>
+                            
+                            <img src="http://www.civicagency.org/wp-content/themes/twentytwelve/img/civicagency/myusa-logo.png" style="" /><br />
+                            <ul>
+                                <li>Seamless login</li>
+                                <li>Business profile</li>
+                                <li>Dynamic fields store</li>
+                                <li>Improved location discovery</li>
+                            </ul>
+
+                        </p>
+                        <br />
+                        <!-- <p align="center">
+                            <a href="http://hyabusa.herokuapp.com" target="_blank">Codename: Hyabusa</a>
+                        </p> -->
+                    </section>  
+
+                                           
+
+                    <section>
+                        <p align="center">
+                            <h1>Visitor Login Flow</h1>
+
+                            <ol>
+                                <li>BusinessUSA 
+                                    <ul style="font-size: 18px;"><li>http://business.usa.gov/access-financing</li></ul>
+                                </li>
+                                <li>BusinessUSA > Login
+                                    <ul style="font-size: 18px;"><li>http://my.business.usa.gov/signin/?return_to=business.usa.gov/access-financing</li></ul>
+                                </li>
+                                <li>MyUSA Login
+                                    <ul style="font-size: 18px;"><li>http://my.usa.gov/sign_in</li></ul>
+                                </li>
+                                <li>BusinessUSA
+                                    <ul style="font-size: 18px;">
+                                        <li>http://business.usa.gov/access-financing?uid=1234&latitude=32.4030000&longitude=-102.494778&token=abcdef</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                            <br /><br />
+                            <span style="font-size: 18px;">
+                            Subsequent API request for Business Profile:<br />
+                            http://my.business.usa.gov/api/profiles?uid=1234&token=abcdef</span>
+                        </p>
+                    </section>                              
+
+                    <section>
+                        <img src="images/profile.png" style="margin-top: -100px;" />
+                    </section>
+
+                    <section>
+                        <img src="images/profile-edit.png" style="margin-top: -100px;" />
+                    </section> 
+
+                    <section>
+                        <p align="center">
+
+                            <h2>Overview: Technology</h2>
+                            <img src="http://www.codechix.org/wp-content/uploads/2012/09/github.png" width="40%" style="margin-top: -30px;" />
+                            <br />
+
+                            <ul>
+                                <li>Open Source</li>
+                                <li>Ruby on Rails</li>
+                                <li>RESTful APIs</li>
+                            </ul>
+                        </p>
+                        <p align="center">
+                            GitHub: <a href="https://github.com/GSA-OCSIT/hyabusa" target="_blank">hyabusa</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <p align="center">
+                            <h2>Documentation</h2>
+                            <img src="images/docs.png" />
+                        </p>
+                    </section>
+
+
+                    <section>
+
+                        <h1>What's Next?</h1>
+
+                        <ul>
+                            <li>Complete MyUSA authentication changes</li>
+                            <li>Migrate to GSA AWS account from Heroku</li>
+                            <li>Moving forward with SBIR...</li>
+                        </ul>
+                    </section>
+
+
+                    <section>
+                        <p align="center">
+                            <h2>An opportunity to improve the SBIR process...</h2>
+                            <img src="http://www.sbir.gov/sites/default/files/imagecache/slideshow_image/sbir.gov_faqs_3.png" /><br />
+                            <ul>
+                                <li>Collaboration with RFP-EZ team</li>
+                                <li>Further supports MyUSA adoption</li>
+                                <li>Excellent use-case for MyUSA forms</li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section>
+                        <p align="center">
+                            <img src="images/fbopen.png" />
+                            <br /><br />
+                            <ul>
+                                <li>Create a single, canonical source for opportunities</li>
+                                <li>Find relevant solicitations</li>
+                                <li><u>Apply</u> for solicitations</li>
+                                <li><u>Track</u> status of application</li>
+                            </ul>
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <p align="center">
+                            <h1>Questions?</h1>
+                        </p>
+                    </section>
+
+
+                    
+
+                    
 
 				</div>
 	
