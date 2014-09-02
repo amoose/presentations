@@ -1,0 +1,139 @@
+<!doctype html>  
+<html lang="en">
+<!-- copied from THE API EVANGELIST http://kinlane.github.io/talks -->
+<head> 
+	<meta charset="utf-8">
+	
+	<title>FEC // 2014 September 2</title>
+
+    <!-- og -->
+    <meta name="author" content="Amos Stone">
+    
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="http://amoose.github.io/presentations/stylesheets/main.css">
+	<link rel="stylesheet" href="http://amoose.github.io/presentations/stylesheets/theme/default.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="http://amoose.github.io/lib/css/zenburn.css">
+
+	<script>
+		// If the query includes 'print-pdf' we'll use the PDF print sheet
+		document.write( '<link rel="stylesheet" href="http://amoose.github.io/presentations/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+	
+</head>
+		
+		<body>
+			
+			<div class="reveal">
+	
+				<!-- Used to fade in a background when a specific slide state is reached -->
+				<div class="state-background"></div>
+				
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+					
+					<section>
+					   <!-- <h3></h3> -->
+
+                       <h2>FEC Graph Search</h2>
+                        <img src="https://18f.gsa.gov/images/logo-18f.png" />
+
+                    </section>
+
+
+					
+					                                                                                                                       
+                    
+                    <section>
+                        <img src="http://www.neotechnology.com/wp-content/themes/Neo_Technology/logos/neo4j_notag_whitebg.png" />
+                       
+                    </section>  
+
+                                           
+
+                    <section>
+                        <img src="http://ahalmeida.files.wordpress.com/2011/09/cypher.jpg" />
+                        <img src="http://assets.neo4j.org/img/still/cineasts.gif" />
+                    </section>
+
+                    <section>
+                        <h2>Parsing Expression Grammars</h2>
+
+                        <img src="http://i.imgur.com/1jiETOv.png" />
+                    </section>
+
+                    
+                    <section>
+                        <img src="http://i.imgur.com/HeyWgl2.png" />
+                    </section>
+
+
+                    <section>
+                        <img src="https://camo.githubusercontent.com/611297890f8557b1f759b5a81a56caf7d4c2a176/687474703a2f2f3138662e6769746875622e696f2f6665632d67726170682d7365617263682f7075626c69632f73637265656e73686f742d67726170682e706e67" />
+                    </section>
+
+                    <section>
+                        <h2>Entities and Relationships</h2>
+
+                        <h3>The sky is the limit!</h3>
+
+                        <img src="http://wallpaper-download.net/wallpapers/random-wallpapers-blue-sky-wallpaper-34503.jpg" />
+                    </section>
+                    
+
+				</div>
+	
+				<!-- The navigational controls UI -->
+				<aside class="controls">
+					<a class="left" href="#">&#x25C4;</a>
+					<a class="right" href="#">&#x25BA;</a>
+					<a class="up" href="#">&#x25B2;</a>
+					<a class="down" href="#">&#x25BC;</a>
+				</aside>
+	
+				<!-- Presentation progress bar -->
+				<div class="progress"><span></span></div>
+				
+			</div>
+			
+			
+			<script src="http://amoose.github.io/presentations/lib/js/head.min.js"></script>
+			<script src="http://amoose.github.io/presentations/javascripts/reveal.min.js"></script>
+	
+			<script>
+				
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+					
+					theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+					transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+	
+					// Optional libraries used to extend on reveal.js
+					dependencies: [
+                        { src: 'http://amoose.github.io/presentations/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://amoose.github.io/presentations/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://amoose.github.io/presentations/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://amoose.github.io/presentations/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					]
+				});
+				
+			</script>
+
+            <style type="text/css">
+            .reveal section img { max-width: 1000px;}
+            </style>
+	</body>
+</html>

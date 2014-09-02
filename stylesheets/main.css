@@ -109,6 +109,7 @@ body {
 }
 
 .reveal img {
+	max-width: 1200px;
 } 
 
 .reveal strong, 
